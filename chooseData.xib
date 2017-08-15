@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="chooseData">
+            <rect key="frame" x="0.0" y="0.0" width="279" height="277"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="year_bg" translatesAutoresizingMaskIntoConstraints="NO" id="LHq-qS-VNz">
+                    <rect key="frame" x="0.0" y="0.0" width="279" height="277"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="year_bg_banner" translatesAutoresizingMaskIntoConstraints="NO" id="xzn-x4-WVN">
+                    <rect key="frame" x="0.0" y="0.0" width="279" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="crX-qr-LRa"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选择年份" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WcG-Bv-lcl">
+                    <rect key="frame" x="109.5" y="20" width="60" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="HPl-Ad-ABV"/>
+                        <constraint firstAttribute="height" constant="21" id="jaI-WJ-zY3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="A9p-ai-lsu">
+                    <rect key="frame" x="5" y="60" width="269" height="207"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="Nse-Af-pIL"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="mVV-PJ-e9m"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="A9p-ai-lsu" secondAttribute="bottom" constant="10" id="0BC-cY-Ck6"/>
+                <constraint firstItem="A9p-ai-lsu" firstAttribute="top" secondItem="xzn-x4-WVN" secondAttribute="bottom" id="6Rd-ed-aFM"/>
+                <constraint firstItem="xzn-x4-WVN" firstAttribute="leading" secondItem="LHq-qS-VNz" secondAttribute="leading" id="7vs-XH-SO5"/>
+                <constraint firstAttribute="trailing" secondItem="A9p-ai-lsu" secondAttribute="trailing" constant="5" id="BlM-Kq-EuP"/>
+                <constraint firstItem="WcG-Bv-lcl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="Gmg-hc-q0V"/>
+                <constraint firstItem="LHq-qS-VNz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="KqQ-dB-IFA"/>
+                <constraint firstItem="WcG-Bv-lcl" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Yyv-X1-99B"/>
+                <constraint firstItem="LHq-qS-VNz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dGB-fw-aN3"/>
+                <constraint firstItem="xzn-x4-WVN" firstAttribute="trailing" secondItem="LHq-qS-VNz" secondAttribute="trailing" id="eoh-Y5-JhS"/>
+                <constraint firstItem="A9p-ai-lsu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="iiw-fF-hRf"/>
+                <constraint firstAttribute="bottom" secondItem="LHq-qS-VNz" secondAttribute="bottom" id="pLo-Sj-YeJ"/>
+                <constraint firstAttribute="trailing" secondItem="LHq-qS-VNz" secondAttribute="trailing" id="qQ3-2q-mMu"/>
+                <constraint firstItem="xzn-x4-WVN" firstAttribute="top" secondItem="LHq-qS-VNz" secondAttribute="top" id="vGo-AN-1Po"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="chooseDataTableView" destination="A9p-ai-lsu" id="UMt-K0-P9z"/>
+                <outlet property="chooseDataTitle" destination="WcG-Bv-lcl" id="X9D-oz-1zb"/>
+            </connections>
+            <point key="canvasLocation" x="-9" y="66"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="year_bg" width="287" height="285"/>
+        <image name="year_bg_banner" width="287" height="68"/>
+    </resources>
+</document>

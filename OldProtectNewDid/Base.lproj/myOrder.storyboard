@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ea2-EN-luz">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+    </dependencies>
+    <scenes>
+        <!--My Order View Controller-->
+        <scene sceneID="7Pk-ui-uZg">
+            <objects>
+                <viewController id="Ea2-EN-luz" customClass="MyOrderViewController" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="dCT-gt-VDW"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="pm7-sn-45a" kind="push" identifier="DetailsMyOrder" id="HEX-sr-wI8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jSj-3k-rau" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1742" y="2203"/>
+        </scene>
+        <!--Details Order View Controller-->
+        <scene sceneID="dOn-sf-evF">
+            <objects>
+                <viewController id="pm7-sn-45a" customClass="DetailsOrderViewController" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="sj1-Y7-W1z"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C48-2v-oKz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2650" y="2203"/>
+        </scene>
+    </scenes>
+</document>

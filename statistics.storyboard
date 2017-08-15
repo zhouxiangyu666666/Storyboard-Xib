@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="EiO-vZ-OCJ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+    </dependencies>
+    <scenes>
+        <!--Statistics View Controller-->
+        <scene sceneID="upM-Lp-jpn">
+            <objects>
+                <viewController id="EiO-vZ-OCJ" customClass="statisticsViewController" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="YPs-fk-lZG"/>
+                    <connections>
+                        <segue destination="8Wc-ww-LAI" kind="push" identifier="nounExplain" id="rkF-mV-oA8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Af8-SU-MSD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1978" y="1711"/>
+        </scene>
+        <!--名词解释-->
+        <scene sceneID="e0x-eG-WFp">
+            <objects>
+                <viewController id="8Wc-ww-LAI" customClass="nounExplainViewController" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="名词解释" id="Z2a-f5-D9R">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="Fill 1" id="o5b-Al-xLb">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="backClick:" destination="8Wc-ww-LAI" id="f1n-16-txK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eyZ-bV-G8x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2839" y="1710"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Fill 1" width="10" height="17"/>
+    </resources>
+</document>

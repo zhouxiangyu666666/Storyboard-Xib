@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MonthCount">
+            <connections>
+                <outlet property="ContentView" destination="iN0-l3-epB" id="wYo-GS-MUq"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="183"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本月接团: 12天" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tj4-Vp-oli">
+                    <rect key="frame" x="44" y="28" width="87.5" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="hhy-ze-xc9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本月接单:24单" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILY-ng-kiM">
+                    <rect key="frame" x="44" y="80.5" width="86.5" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="8i8-JB-VWm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本月应收:5990元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l0X-N1-lJN">
+                    <rect key="frame" x="44" y="125.5" width="103" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="aLg-GF-eJM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zms-7G-As3">
+                    <rect key="frame" x="254" y="80" width="62" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="tzf-0O-xKH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="数据统计&gt;"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ILY-ng-kiM" firstAttribute="leading" secondItem="tj4-Vp-oli" secondAttribute="leading" id="1rm-I8-uK1"/>
+                <constraint firstItem="tj4-Vp-oli" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="bottom" multiplier="20/130" id="Ydy-bJ-wzU"/>
+                <constraint firstItem="zms-7G-As3" firstAttribute="top" secondItem="ILY-ng-kiM" secondAttribute="top" id="aI9-yM-Wqv"/>
+                <constraint firstItem="l0X-N1-lJN" firstAttribute="leading" secondItem="tj4-Vp-oli" secondAttribute="leading" id="cmK-Qg-6gM"/>
+                <constraint firstItem="tj4-Vp-oli" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="44" id="f1n-kL-E5B"/>
+                <constraint firstItem="l0X-N1-lJN" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" multiplier="102/130" id="hrr-J3-HOX"/>
+                <constraint firstItem="ILY-ng-kiM" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" multiplier="70/130" id="i7C-HX-6Jr"/>
+                <constraint firstAttribute="trailing" secondItem="zms-7G-As3" secondAttribute="trailing" constant="59" id="jUt-L1-kGu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="138.5" y="8.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bM9-eD-OnJ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--消息中心-->
+        <scene sceneID="sA4-td-ufo">
+            <objects>
+                <tableViewController id="bM9-eD-OnJ" customClass="MessageTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="pdD-Fa-Gh3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="pwJ-fI-G3C">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" contentMode="center" tableViewCell="pwJ-fI-G3C" id="eRi-Jo-7Ct">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="bM9-eD-OnJ" id="2Qe-DJ-ljo"/>
+                            <outlet property="delegate" destination="bM9-eD-OnJ" id="usH-xk-aVb"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="消息中心" id="eYN-jP-wmt"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <segue destination="14v-79-dr6" kind="push" identifier="detailedMessage" id="6q7-Y3-Ox2"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Auc-bY-GFP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1946" y="1829"/>
+        </scene>
+        <!--系统消息-->
+        <scene sceneID="fFF-EU-JaE">
+            <objects>
+                <viewController id="14v-79-dr6" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qsI-Gg-pUz"/>
+                        <viewControllerLayoutGuide type="bottom" id="Cis-bG-4bh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XUz-gO-hhb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="characterWrap" numberOfLines="22" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l7J-EF-g4e">
+                                <rect key="frame" x="20" y="40" width="335" height="125.5"/>
+                                <string key="text">The skin is the largest organ in the body. It defends against disease and infection, regulates temperature and even aids in vitamin production. Keeping skin healthy is crucial for beauty and general health, even if most of us are interested in knowing how to keep skin looking healthy, rather than really keeping</string>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="l7J-EF-g4e" firstAttribute="top" secondItem="qsI-Gg-pUz" secondAttribute="bottom" constant="20" id="YEe-lM-JrP"/>
+                            <constraint firstItem="l7J-EF-g4e" firstAttribute="leading" secondItem="XUz-gO-hhb" secondAttribute="leading" constant="20" id="hSt-eU-DVq"/>
+                            <constraint firstAttribute="trailing" secondItem="l7J-EF-g4e" secondAttribute="trailing" constant="20" id="nle-h7-xwH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="系统消息" id="kNT-ja-GpI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4mQ-ao-gXQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2746" y="1828"/>
+        </scene>
+    </scenes>
+</document>
